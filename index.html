@@ -10,6 +10,16 @@
   <canvas id="tetris" width="240" height="400"></canvas>
   <h2>スコア: <span id="scoreDisplay">0</span></h2>
   <p>← →：移動　↓：落下　Q/W：回転　P：一時停止</p>
+
+  <!-- ▼ タッチ操作ボタン -->
+  <div id="controls">
+    <button onclick="playerMove(-1)">←</button>
+    <button onclick="playerDrop()">↓</button>
+    <button onclick="playerMove(1)">→</button>
+    <button onclick="playerRotate(-1)">⟲</button>
+    <button onclick="playerRotate(1)">⟳</button>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
